@@ -1,0 +1,31 @@
+{
+  "name": "ms-signalr-client",
+  "description": "packaged version of the Microsoft Javascript SignalR client",
+  "keywords": [
+    "signalr"
+  ],
+  "homepage": "http://todo",
+  "bugs": "https://todo/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/todo"
+  },
+  "author": {
+    "name": "Danny Frencham",
+    "url": "https://diydeveloper.io"
+  },
+  "devDependencies": {
+    "jquery": "^1.6.4"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+  },
+  "version": "2.2.0",
+  "main": "min/jquery.signalr-2.2.0.min.js",
+  "shim": {
+    "ms-signalr-client": {
+       deps: ["jquery"],
+       exports: "$.connection"
+   },
+  }
+}
