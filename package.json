@@ -2,7 +2,7 @@
   "name": "ms-signalr-client",
   "description": "packaged version of the Microsoft Javascript SignalR client",
   "version": "2.2.0",
-  "main": "min/jquery.signalr-2.2.0.min.js",
+  "main": "jquery.signalr-2.2.0.js",
   "keywords": [
     "signalr"
   ],
@@ -32,9 +32,6 @@
     "jquery": "^1.6.4"
   },
   "jspm": {
-    "format": "global",
-    "directories": {
-      "lib": "src"
-    }
+    "format": "global"
   }
 }
