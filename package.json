@@ -1,31 +1,40 @@
 {
   "name": "ms-signalr-client",
   "description": "packaged version of the Microsoft Javascript SignalR client",
+  "version": "2.2.0",
+  "main": "min/jquery.signalr-2.2.0.min.js",
   "keywords": [
     "signalr"
   ],
-  "homepage": "http://todo",
-  "bugs": "https://todo/issues",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "homepage": "https://github.com/dfrencham/ms-signalr-client",
+  "bugs": "https://github.com/dfrencham/ms-signalr-client/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/todo"
+    "url": "https://github.com/dfrencham/ms-signalr-client"
   },
   "author": {
     "name": "Danny Frencham",
     "url": "https://diydeveloper.io"
   },
-  "devDependencies": {
+  "contributors": [
+    {
+      "name": "Danny Frencham",
+      "url": "https://diydeveloper.io"
+    }
+  ],
+  "dependencies": {
     "jquery": "^1.6.4"
   },
-  "scripts": {
-    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
-  },
-  "version": "2.2.0",
-  "main": "min/jquery.signalr-2.2.0.min.js",
-  "shim": {
-    "ms-signalr-client": {
-       deps: ["jquery"],
-       exports: "$.connection"
-   },
+  "jspm": {
+    "format": "global",
+    "directories": {
+      "lib": "src"
+    }
   }
 }
