@@ -35,9 +35,10 @@
     "format": "global",
     "registry": "npm",
     "shim": {
-    "jquery.signalr-2.2.0": {
-      "deps": ["jquery"],
-       "exports": "$.connection"
-    }
-  }
-}
+      "jquery.signalr-2.2.0": {
+        "deps": ["jquery"],
+         "exports": "$.connection"
+       }
+     }
+   }
+ }
