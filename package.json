@@ -29,9 +29,15 @@
     }
   ],
   "dependencies": {
-    "jquery": "^1.6.4"
+    "jquery": ">=1.6.4"
   },
   "jspm": {
-    "format": "global"
+    "format": "global",
+    "registry": "npm",
+    "shim": {
+    "jquery.signalr-2.2.0": {
+      "deps": ["jquery"],
+       "exports": "$.connection"
+    }
   }
 }
