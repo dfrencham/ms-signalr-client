@@ -13,20 +13,16 @@
     }
   ],
   "homepage": "https://github.com/dfrencham/ms-signalr-client",
-  "bugs": "https://github.com/dfrencham/ms-signalr-client/issues",
+  "bugs": {
+    "url": "https://github.com/dfrencham/ms-signalr-client/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/dfrencham/ms-signalr-client"
   },
-  "author": {
-    "name": "Danny Frencham",
-    "url": "https://diydeveloper.io"
-  },
+  "author": "Danny Frencham (https://diydeveloper.io)",
   "contributors": [
-    {
-      "name": "Danny Frencham",
-      "url": "https://diydeveloper.io"
-    }
+    "Danny Frencham (https://diydeveloper.io)"
   ],
   "dependencies": {
     "jquery": ">=1.6.4"
@@ -36,9 +32,15 @@
     "registry": "npm",
     "shim": {
       "jquery.signalr-2.2.0": {
-        "deps": ["jquery"],
-         "exports": "$.connection"
-       }
-     }
-   }
- }
+        "deps": [
+          "jquery"
+        ],
+        "exports": "$.connection"
+      }
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "Apache-2.0"
+}
