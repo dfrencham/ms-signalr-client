@@ -1,7 +1,7 @@
 {
   "name": "ms-signalr-client",
   "description": "packaged version of the Microsoft Javascript SignalR client",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "main": "jquery.signalr-2.2.0.js",
   "keywords": [
     "signalr"
