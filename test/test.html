@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mocha</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+    </head>
+    <body>
+        <script src="../node_modules/chai/chai.js"></script>
+        <script src="../node_modules/mocha/mocha.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../jquery.signalr-2.2.0.js"></script>
+        <script>mocha.setup('bdd')</script>
+        <script>
+
+            var expect = chai.expect;
+
+            describe('dependencies', function () {
+                it('jQuery should be loaded', function () {
+                  var jqueryLoaded = ($) ? true : false;
+                  expect(jqueryLoaded).to.equal(true);
+                });
+
+                it('jQuery signalR should be loaded', function () {
+                  var signalRLoaded = ($.hubConnection) ? true : false;
+                  expect(signalRLoaded).to.equal(true);
+                });
+            });
+
+            describe('signalR functionality', function () {
+
+                var connection = null;
+                var proxy = null;
+
+                it('is the version we are expecting', function() {
+                  expect($).to.have.property('signalR')
+                  expect($.signalR.version).to.equal('2.2.0')
+
+                })
+
+                it('has transports loaded', function() {
+                  expect($.signalR).to.have.property('transports');
+                })
+
+                it('has events loaded', function() {
+                  expect($.signalR).to.have.property('events');
+                })
+
+                it('hub connection can be created', function () {
+                  connection = $.hubConnection('http://localhost:36823');
+                  chai.assert.isDefined(connection, 'hub connection has been defined');
+                  chai.assert.isObject(connection, 'hub connection is an object');
+                });
+
+                it('proxy can be created', function (){
+                  proxy = connection.createHubProxy('FalseHub');
+                  chai.assert.isObject(proxy, 'proxy is an object');
+                });
+
+                /*it('should be bananas', function () {
+                  var expect = chai.expect
+                    , foo = 'bar'
+                    , beverages = { tea: [ 'chai', 'matcha', 'oolong' ] };
+                    expect(foo).to.be.a('string');
+
+                  expect(foo).to.equal('bar');
+                  expect(foo).to.have.length(3);
+                  expect(beverages).to.have.property('tea').with.length(3);
+                });*/
+            });
+        </script>
+        <script>
+            if (window.mochaPhantomJS) {
+                mochaPhantomJS.run();
+            } else {
+                mocha.run();
+            }
+        </script>
+    </body>
+</html>
