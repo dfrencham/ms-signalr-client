@@ -25,7 +25,7 @@
     "Danny Frencham (https://diydeveloper.io)"
   ],
   "dependencies": {
-    "jquery": ">=1.6.4"
+    "jquery": "^2.2.0"
   },
   "jspm": {
     "format": "global",
