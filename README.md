@@ -3,7 +3,7 @@
 
 This is a package for Microsoft's [ASP.NET SignalR JavaScript Library](https://github.com/SignalR/SignalR/wiki/SignalR-JS-Client).
 
-Current packaged version is v2.2.0.
+Current packaged version is **v2.2.1**.
 
 ### Usage
 
@@ -27,7 +27,7 @@ require('ms-signalr-client');
 
 ```
 <script src="../node_modules/jquery/dist/jquery.js"></script>
-<script src="../jquery.signalr-2.2.0.js"></script>
+<script src="../jquery.signalR-2.2.1.js"></script>
 ```
 
 Set up a connection to a signalR host, and Hub. Make sure you update the [address], [port], and [hubname] values to suit your environment.
@@ -50,10 +50,10 @@ connection.start({ jsonp: true })
 
 ### Tests
 
-To run tests, run the default gulp command:
+To run tests, run the following command:
 
 ```
-$ gulp
+$ npm run test
 ```
 
 Tests will be run using:
@@ -64,7 +64,7 @@ Tests will be run using:
 
 ### Version numbering
 
-I use the same major/minor version numbers as jquery.signalr, but a different build number. The build number is updated with each package release.
+The build number is a little ahead of the offical jquery.signalr repo. This is due to fixes to this package requiring a package version bump.
 
 ### Problems
 

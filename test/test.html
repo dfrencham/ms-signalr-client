@@ -10,7 +10,7 @@
         <script src="../node_modules/chai/chai.js"></script>
         <script src="../node_modules/mocha/mocha.js"></script>
         <script src="../node_modules/jquery/dist/jquery.js"></script>
-        <script src="../jquery.signalr-2.2.0.js"></script>
+        <script src="../jquery.signalR-2.2.1.js"></script>
         <script>mocha.setup('bdd')</script>
         <script>
 
@@ -35,7 +35,7 @@
 
                 it('is the version we are expecting', function() {
                   expect($).to.have.property('signalR')
-                  expect($.signalR.version).to.equal('2.2.0')
+                  expect($.signalR.version).to.equal('2.2.1')
 
                 })
 
