@@ -1,3 +1,7 @@
+## 2.2.5 (2016-07-29)
+
+- Removed version numbers from SignalR js files to prevent breaking references when updating
+
 ## 2.2.4 (2016-07-27)
 
 - Updated to SignalR 2.2.1 release.
