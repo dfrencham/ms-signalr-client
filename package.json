@@ -1,7 +1,7 @@
 {
   "name": "ms-signalr-client",
   "description": "packaged version of the Microsoft Javascript SignalR client",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "main": "jquery.signalR.js",
   "keywords": [
     "signalr"
@@ -40,7 +40,8 @@
     }
   },
   "scripts": {
-    "test": "./node_modules/phantomjs/bin/phantomjs ./node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js ./test/test.html "
+    "test": "./node_modules/phantomjs/bin/phantomjs ./node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js ./test/test.html ",
+    "test-windows": ".\\node_modules\\.bin\\phantomjs.cmd ./node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js ./test/test.html"
   },
   "license": "Apache-2.0",
   "devDependencies": {

@@ -1,7 +1,7 @@
 /* jquery.signalR.core.js */
 /*global window:false */
 /*!
- * ASP.NET SignalR JavaScript Library v2.2.1-pre
+ * ASP.NET SignalR JavaScript Library v2.2.2-pre
  * http://signalr.net/
  *
  * Copyright (c) .NET Foundation. All rights reserved.
@@ -2954,5 +2954,5 @@
 /*global window:false */
 /// <reference path="jquery.signalR.core.js" />
 (function ($, undefined) {
-    $.signalR.version = "2.2.1-pre";
+    $.signalR.version = "2.2.2-pre";
 }(window.jQuery));

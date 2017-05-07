@@ -3,7 +3,7 @@
 
 This is a package for Microsoft's [ASP.NET SignalR JavaScript Library](https://github.com/SignalR/SignalR/wiki/SignalR-JS-Client).
 
-Current packaged version is **v2.2.1**.
+Current packaged version is **v2.2.2-pre**.
 
 ### Usage
 
@@ -27,7 +27,7 @@ require('ms-signalr-client');
 
 ```
 <script src="../node_modules/jquery/dist/jquery.js"></script>
-<script src="../jquery.signalR-2.2.1.js"></script>
+<script src="../jquery.signalR.js"></script>
 ```
 
 Set up a connection to a signalR host, and Hub. Make sure you update the [address], [port], and [hubname] values to suit your environment.
