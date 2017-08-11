@@ -5,6 +5,12 @@ This is a package for Microsoft's [ASP.NET SignalR JavaScript Library](https://g
 
 Current packaged version is **v2.2.2-pre**.
 
+
+## Note regarding jQuery3
+- The intent of this package is to simply act as a packaged version of the [current official Microsoft SignalR JS client](https://github.com/SignalR/SignalR/tree/dev/src/Microsoft.AspNet.SignalR.Client.JS). I do not fix any bugs in the official implementation. Bug fixes filter down to this package after Microsoft fixes them in the official client.
+
+- If you need a version of the SignalR client with jQuery3 support, see [Paul Giletich's fork](https://github.com/PaulGiletich/ms-signalr-client).
+
 ### Usage
 
 Include the library in your page using one of the following methods:
